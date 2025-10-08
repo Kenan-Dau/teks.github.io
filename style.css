@@ -4,12 +4,12 @@
   right: 0;
   bottom: 32px;
   z-index: 9002;
-  font-size: 64px;
+  font-size: 10vw;
   cursor: pointer;
 }
 
 #soup-nav span {
-  padding: 0 20px;
+  padding: 0 5vw;
 }
 #soup-prev {
   float: left;
@@ -19,53 +19,24 @@
 }
 
 .soup-title {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 8vw;
+  margin-bottom: 3vw;
   padding: 10px 0;
   width: 100%;
 }
 
 .soup-desc {
-  font-size: 16px;
+  font-size: 4.5vw;
   line-height: 1.5;
-  padding: 10px 40px;
+  padding: 10px 2vw;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 15px;
-}
-
-.letters-wrap.position-data .soup-desc {
-  line-height: 1 !important;
-}
-
-.soup-desc .line-break-spacer {
-  content: none;
-  visibility: hidden !important;
-
-  display: block !important;
-  height: 0.01em !important;
-  width: 100% !important;
-  margin: 0 !important;
-
-  padding-bottom: 1em !important;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  background-color: #eee;
-  color: #111;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  overflow: hidden;
+  margin-top: 5vw;
 }
 
 #soup-container {
   width: 100%;
   height: 100%;
-  min-width: 320px;
-  min-height: 480px;
   position: relative;
 }
 
@@ -75,46 +46,37 @@ body {
   display: inline-block;
 }
 
-.letters-wrap.mutable {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
-.letters-wrap.mutable .letter {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: left 2s, top 2s, color 2s;
-  color: #aaa;
-  display: inline-block;
-}
-
-.letters-wrap.mutable .letter.active {
-  color: #111;
-  z-index: 9001;
-}
-
 .letters-wrap.position-data {
   top: 50%;
   left: 50%;
-  max-width: 80%;
-  padding: 20px;
+  max-width: 90%;
+  padding: 5vw;
   visibility: hidden;
   transform: translate(-50%, -50%);
 }
 
-.segment {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.letters-wrap.position-data .soup-desc {
+  line-height: 1 !important;
 }
 
-button {
-  z-index: 9001;
-  position: relative;
-  cursor: pointer;
+.soup-desc .line-break-spacer {
+  content: none;
+  visibility: hidden !important;
+  display: block !important;
+  height: 0.01em !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding-bottom: 1em !important;
+}
+
+/* KODE GLOBAL */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  color: #111;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
 }
