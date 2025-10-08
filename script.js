@@ -10,7 +10,10 @@ $(document).ready(function () {
     },
     {
       title: "I Have Crush On You!!",
-      desc: "Mungkin itu sebuah kalimat yg cukup simple, kalimat yang menyimpan banyak harapan dan juga keraguan dibaliknya. Ada harapan yg ingin rasa suka itu tidak jatuh sendirian, juga ada yg harus disiapkan agar bisa menerima resiko menyukai seseorang.",
+      desc: [
+        "Mungkin itu sebuah kalimat yg cukup simple, kalimat yang menyimpan banyak harapan dan juga keraguan dibaliknya.",
+        "Ada harapan yg ingin rasa suka itu tidak jatuh sendirian, juga ada yg harus disiapkan agar bisa menerima resiko menyukai seseorang.",
+      ],
     },
     {
       title: "",
