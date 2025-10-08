@@ -26,7 +26,7 @@
 }
 
 .soup-desc {
-  font-size: 4.5vw;
+  font-size: 4.2vw;
   line-height: 1.5;
   padding: 10px 0;
   width: 100%;
@@ -37,8 +37,8 @@
 .letters-wrap.position-data {
   top: 50%;
   left: 50%;
-  max-width: 95%;
-  padding: 5vw 2vw;
+  max-width: 98%;
+  padding: 5vw 1vw;
   visibility: hidden;
   transform: translate(-50%, -50%);
 }
