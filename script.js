@@ -2,7 +2,6 @@ $(document).ready(function () {
   /*
    * Main variables
    */
-  // Menggunakan 'const' karena array content tidak di-assign ulang
   const content = [
     {
       title: "I Have Crush On You!!",
@@ -35,12 +34,9 @@ $(document).ready(function () {
     },
   ];
 
-  // Menggunakan 'let' karena currentPage akan diubah
   let currentPage = 0;
 
-  // Sekarang menerima 'i' (indeks konten) sebagai parameter
   function setText(contentIndex) {
-    // Menggunakan 'let' untuk loop counter
     let j;
 
     for (j = 0; j < content[contentIndex].title.length; j++) {
@@ -59,7 +55,7 @@ $(document).ready(function () {
     }
   }
 
-  // Menggunakan 'let' untuk loop counter
+  // Loop Inisialisasi Konten
   for (let i = 0; i < content.length; i++) {
     for (let obj in content[i]) {
       if (typeof content[i][obj] === "string") {
@@ -67,7 +63,15 @@ $(document).ready(function () {
         continue;
       } else if (typeof content[i][obj] === "object") {
         let toPush = [];
+        // Logika untuk menggabungkan karakter dan menyisipkan jeda di antara paragraf
         for (let j = 0; j < content[i][obj].length; j++) {
+          // JIKA BUKAN PARAGRAF PERTAMA, TAMBAHKAN JEDA SPASI
+          if (j > 0) {
+            for (let p = 0; p < 15; p++) {
+              toPush.push(" ");
+            }
+          }
+          // Memecah paragraf saat ini menjadi karakter
           for (let k = 0; k < content[i][obj][j].length; k++) {
             toPush.push(content[i][obj][j][k]);
           }
@@ -98,7 +102,6 @@ $(document).ready(function () {
     scrambleOthers();
   });
 
-  // Sembunyikan tombol 'Prev' di awal
   $("#soup-prev").hide();
 
   $("#soup-prev").click(function () {
@@ -125,7 +128,6 @@ $(document).ready(function () {
    * Functions
    */
   function arrangeCurrentPage() {
-    // Gunakan 'let' untuk loop counter
     for (let i = 0; i < content[currentPage].title.length; i++) {
       $(".mutable:eq(" + currentPage + ") > .soup-title > .letter")
         .eq(i)
@@ -142,7 +144,6 @@ $(document).ready(function () {
           zIndex: 9001,
         });
     }
-    // Gunakan 'let' untuk loop counter
     for (let i = 0; i < content[currentPage].desc.length; i++) {
       $(".mutable:eq(" + currentPage + ") > .soup-desc > .letter")
         .eq(i)
@@ -162,7 +163,6 @@ $(document).ready(function () {
   }
 
   function scrambleOthers() {
-    // Gunakan 'let' untuk loop counter
     for (let i = 0; i < content.length; i++) {
       if (currentPage === i) continue;
 
