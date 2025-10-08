@@ -50,7 +50,6 @@ $(document).ready(function () {
     for (j = 0; j < content[contentIndex].desc.length; j++) {
       let character = content[contentIndex].desc[j];
 
-      // Logika untuk menambahkan kelas pemisah baris
       let classAttr =
         character === "_"
           ? ' class="letter line-break-spacer"'
@@ -71,13 +70,13 @@ $(document).ready(function () {
       } else if (typeof content[i][obj] === "object") {
         let toPush = [];
 
-        // Menyisipkan underscore sebagai penanda jeda
         for (let j = 0; j < content[i][obj].length; j++) {
           if (j > 0) {
-            for (let p = 0; p < 5; p++) {
+            for (let p = 0; p < 2; p++) {
               toPush.push("_");
             }
           }
+          // Memecah paragraf saat ini menjadi karakter
           for (let k = 0; k < content[i][obj][j].length; k++) {
             toPush.push(content[i][obj][j][k]);
           }
