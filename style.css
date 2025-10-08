@@ -2,10 +2,21 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 32px;
+  bottom: 32px; /* Jarak dari bawah */
   z-index: 9002;
-  font-size: 64px;
+  font-size: 64px; /* Ukuran ikon panah */
   cursor: pointer;
+}
+
+#soup-nav span {
+  /* Menambahkan styling untuk ikon agar berada di ujung kiri dan kanan */
+  padding: 0 20px;
+}
+#soup-prev {
+  float: left;
+}
+#soup-next {
+  float: right;
 }
 
 .soup-title {
@@ -24,7 +35,7 @@ body {
   color: #111;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 #soup-container {
@@ -40,23 +51,27 @@ body {
   overflow: hidden;
   display: inline-block;
 }
+
 .letters-wrap.mutable {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
+
 .letters-wrap.mutable .letter {
   position: absolute;
   left: 0;
   top: 0;
   transition: left 2s, top 2s, color 2s;
-  color: "#AAA";
+  color: #aaa;
 }
+
 .letters-wrap.mutable .letter.active {
-  color: "#111";
+  color: #111;
   z-index: 9001;
 }
+
 .letters-wrap.position-data {
   top: 50%;
   left: 50%;
