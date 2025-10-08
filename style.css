@@ -39,11 +39,11 @@
   visibility: hidden !important;
 
   display: block !important;
-  height: 0.1em !important;
+  height: 0.01em !important;
   width: 100% !important;
   margin: 0 !important;
 
-  padding-bottom: 24px !important;
+  padding-bottom: 1em !important;
 }
 
 html,
