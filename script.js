@@ -51,6 +51,7 @@ $(document).ready(function () {
     for (j = 0; j < content[contentIndex].desc.length; j++) {
       let character = content[contentIndex].desc[j];
 
+      // Menambahkan kelas line-break-spacer jika karakter adalah penanda jeda
       let classAttr =
         character === "_"
           ? ' class="letter line-break-spacer"'

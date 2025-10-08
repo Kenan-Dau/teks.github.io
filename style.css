@@ -34,6 +34,10 @@
   margin-top: 15px;
 }
 
+.letters-wrap.position-data .soup-desc {
+  line-height: 1 !important;
+}
+
 .soup-desc .line-break-spacer {
   content: none;
   visibility: hidden !important;
