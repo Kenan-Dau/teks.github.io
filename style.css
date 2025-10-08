@@ -37,10 +37,13 @@
 .soup-desc .line-break-spacer {
   content: none;
   visibility: hidden !important;
+
   display: block !important;
-  height: 0.75em !important;
+  height: 0.1em !important;
   width: 100% !important;
   margin: 0 !important;
+
+  padding-bottom: 24px !important;
 }
 
 html,
