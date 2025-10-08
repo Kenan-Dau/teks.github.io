@@ -46,12 +46,19 @@ $(document).ready(function () {
           '<span class="letter">' + content[contentIndex].title[j] + "</span>"
         );
     }
+
     for (j = 0; j < content[contentIndex].desc.length; j++) {
+      let character = content[contentIndex].desc[j];
+
+      // Logika untuk menambahkan kelas pemisah baris
+      let classAttr =
+        character === "_"
+          ? ' class="letter line-break-spacer"'
+          : ' class="letter"';
+
       $(".soup-desc")
         .last()
-        .append(
-          '<span class="letter">' + content[contentIndex].desc[j] + "</span>"
-        );
+        .append("<span" + classAttr + ">" + character + "</span>");
     }
   }
 
@@ -63,15 +70,14 @@ $(document).ready(function () {
         continue;
       } else if (typeof content[i][obj] === "object") {
         let toPush = [];
-        // Logika untuk menggabungkan karakter dan menyisipkan jeda di antara paragraf
+
+        // Menyisipkan underscore sebagai penanda jeda
         for (let j = 0; j < content[i][obj].length; j++) {
-          // JIKA BUKAN PARAGRAF PERTAMA, TAMBAHKAN JEDA SPASI
           if (j > 0) {
-            for (let p = 0; p < 15; p++) {
-              toPush.push(" ");
+            for (let p = 0; p < 5; p++) {
+              toPush.push("_");
             }
           }
-          // Memecah paragraf saat ini menjadi karakter
           for (let k = 0; k < content[i][obj][j].length; k++) {
             toPush.push(content[i][obj][j][k]);
           }

@@ -31,6 +31,17 @@
   padding: 10px 40px;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 15px;
+}
+
+.soup-desc .line-break-spacer {
+  content: none;
+  visibility: hidden !important;
+
+  display: block !important;
+  height: 1.5em !important;
+  width: 100% !important;
+  margin: 10px 0 !important;
 }
 
 html,
