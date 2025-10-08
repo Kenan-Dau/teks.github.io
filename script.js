@@ -16,7 +16,10 @@ $(document).ready(function () {
     },
     {
       title: "",
-      desc: "Menurut aku, menyatakan perasaan itu hal yg cukup serius, banyak yg akan dikorbankan termasuk hasil akhirnya, tapi juga melepas hal yg sudah Iama tersimpan itu cukup melegakan dan bukan hal yg mudah. Sebenarnya aku gak hebat masalah ungkapin perasaan tapi disini aku cuman mau ungkapin perasaan aku sama kamu, masalah diterima atau gak itu hak kamu, aku juga gak bakal berharap lebih sama kamu",
+      desc: [
+        "Menurut aku, menyatakan perasaan itu hal yg cukup serius, banyak yg akan dikorbankan termasuk hasil akhirnya, tapi juga melepas hal yg sudah Iama tersimpan itu cukup melegakan dan bukan hal yg mudah.",
+        "Sebenarnya aku gak hebat masalah ungkapin perasaan tapi disini aku cuman mau ungkapin perasaan aku sama kamu, masalah diterima atau gak itu hak kamu, aku juga gak bakal berharap lebih sama kamu",
+      ],
     },
     {
       title: "",
