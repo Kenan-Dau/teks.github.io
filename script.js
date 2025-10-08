@@ -12,20 +12,26 @@ $(document).ready(function () {
       title: "I Have Crush On You!!",
       desc: [
         "Mungkin itu sebuah kalimat yg cukup simple, kalimat yang menyimpan banyak harapan dan juga keraguan dibaliknya.",
-        "Ada harapan yg ingin rasa suka itu tidak jatuh sendirian, juga ada yg harus disiapkan agar bisa menerima resiko menyukai seseorang.",
+        "Ada harapan yg ingin rasa suka itu tidak jatuh sendirian, juga ada mental yg disiapkan agar bisa menerima resiko menyukai seseorang.",
       ],
     },
     {
       title: "",
-      desc: "Menyatakan perasaan itu hal yg cukup serius, banyak yg akan dikorbankan termasuk hasil akhirnya, juga melepas hal yg sudah Iama tersimpan itu cukup melegakan dan bukan hal yg mudah. Sebenarnya aku nggak hebat masalah ungkapin perasaan tapi disini aku cuman mau ungkapin perasaan aku sama kamu, masalah diterima atau nggak itu hak kamu, aku juga gak bakal berharap lebih kok",
+      desc: [
+        "Menurut aku, menyatakan perasaan itu hal yg cukup serius, banyak yg akan dikorbankan termasuk hasil akhirnya, tapi juga melepas hal yg sudah Iama tersimpan itu cukup melegakan dan bukan hal yg mudah.",
+        "Sebenarnya aku gak hebat masalah ungkapin perasaan tapi disini aku cuman mau ungkapin perasaan aku sama kamu, masalah diterima atau gak itu hak kamu, aku juga gak bakal berharap lebih sama kamu",
+      ],
     },
     {
       title: "",
-      desc: "Kalau kamu risih bilang yahh gausa dipendam atau takut nyakitin perasaan aku, semisal kamu udah punya pacar maaf yaa karna udah confess ke kamu...mungkin segitu saja dari aku, hehe makasih yaa sudah mau dibaca.",
+      desc: [
+        "Kalau kamu selama ini risih langsung bilang yaa gak usah dipendam lagi atau takut nyakitin perasaan aku, semisal kamu udah punya crush atau dekatan maaf yaa karna udah confess ke kamu...",
+        "Mungkin segini saja dari aku, senang bisa kenal dan cerita sama kamu. Hehe makasih yaa sudah mau dibaca.",
+      ],
     },
     {
       title: "I Have Crush On You!!",
-      desc: "Aku Tunggu Balasan Mu:)",
+      desc: "Aku Tunggu Balasan Kamu:)",
     },
   ];
 
