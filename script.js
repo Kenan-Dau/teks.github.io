@@ -36,6 +36,7 @@ $(document).ready(function () {
 
   let currentPage = 0;
 
+  // Fungsi untuk menambahkan kelas khusus pada penanda jeda
   function setText(contentIndex) {
     let j;
 
@@ -72,11 +73,10 @@ $(document).ready(function () {
 
         for (let j = 0; j < content[i][obj].length; j++) {
           if (j > 0) {
-            for (let p = 0; p < 2; p++) {
+            for (let p = 0; p < 1; p++) {
               toPush.push("_");
             }
           }
-          // Memecah paragraf saat ini menjadi karakter
           for (let k = 0; k < content[i][obj][j].length; k++) {
             toPush.push(content[i][obj][j][k]);
           }
