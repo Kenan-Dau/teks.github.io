@@ -2,14 +2,13 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 32px; /* Jarak dari bawah */
+  bottom: 32px;
   z-index: 9002;
-  font-size: 64px; /* Ukuran ikon panah */
+  font-size: 64px;
   cursor: pointer;
 }
 
 #soup-nav span {
-  /* Menambahkan styling untuk ikon agar berada di ujung kiri dan kanan */
   padding: 0 20px;
 }
 #soup-prev {
@@ -21,10 +20,17 @@
 
 .soup-title {
   font-size: 32px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .soup-desc {
   font-size: 16px;
+  line-height: 1.5;
+  padding: 10px 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 html,
@@ -65,6 +71,7 @@ body {
   top: 0;
   transition: left 2s, top 2s, color 2s;
   color: #aaa;
+  display: inline-block;
 }
 
 .letters-wrap.mutable .letter.active {
@@ -75,6 +82,8 @@ body {
 .letters-wrap.position-data {
   top: 50%;
   left: 50%;
+  max-width: 80%;
+  padding: 20px;
 
   visibility: hidden;
   transform: translate(-50%, -50%);
